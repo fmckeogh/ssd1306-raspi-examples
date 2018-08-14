@@ -1,0 +1,9 @@
+[target.armv7-unknown-linux-musleabihf]
+rustflags = [
+  "-C", "linker=rust-lld",
+  "-Z", "linker-flavor=ld.lld",
+  "-Z", "thinlto=no",
+]
+
+[build]
+target = "armv7-unknown-linux-musleabihf"

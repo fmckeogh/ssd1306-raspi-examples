@@ -1,0 +1,14 @@
+[package]
+name = "ssd1306-raspi-examples"
+version = "0.1.0"
+authors = ["Ferdia McKeogh <ferdia@mckeogh.tech>"]
+
+[dependencies]
+linux-embedded-hal = "0.2.0"
+embedded-graphics = "0.1.1"
+machine-ip = "0.2.1"
+
+[dependencies.ssd1306]
+git = "https://github.com/jamwaffles/ssd1306.git"
+rev = "70a76dc"
+features = ["graphics"]
