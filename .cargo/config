@@ -1,3 +1,10 @@
+# Uncomment for Linux x-compile
+#[target.arm-unknown-linux-gnueabihf]
+#linker = "arm-linux-gnueabihf-gcc"
+#[build]
+#target = "arm-unknown-linux-gnueabihf"
+
+# Comment out below for simple Linux x-compile
 [target.armv7-unknown-linux-musleabihf]
 rustflags = [
   "-C", "linker=rust-lld",
